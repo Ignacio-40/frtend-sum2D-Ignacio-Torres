@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de equipo - TechFix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>TechFix</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="index.html#precios" class="nav-link">Precios</a></li>
+                <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="ingreso.html" class="nav-link ingresar-btn">Ingresar equipo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="form-page">
+        <section class="form-hero">
+            <div class="form-hero-content">
+                <h1>Formulario de ingreso de equipo</h1>
+                <p>Completa los datos del cliente para iniciar el proceso de reparación o mantenimiento.</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="section-header">
+                <p class="section-subtitle">Datos del cliente</p>
+                <h2>Información personal</h2>
+            </div>
+            <form class="client-form" id="clientForm">
+                <div class="form-grid">
+                    <label>
+                        <span>Nombre completo</span>
+                        <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    </label>
+                    <label>
+                        <span>DNI</span>
+                        <input type="text" name="dni" placeholder="Documento de identidad" required>
+                    </label>
+                    <label>
+                        <span>Correo electrónico</span>
+                        <input type="email" name="email" placeholder="usuario@ejemplo.com" required>
+                    </label>
+                    <label>
+                        <span>Confirmar correo electrónico</span>
+                        <input type="email" name="confirmEmail" placeholder="Repite tu correo" required>
+                    </label>
+                    <label>
+                        <span>Teléfono de contacto</span>
+                        <input type="tel" name="telefono" placeholder="+54 9 11 1234 5678" required>
+                    </label>
+                </div>
+
+                <div class="form-group radio-group">
+                    <p>Tipo de cliente</p>
+                    <label class="radio-label">
+                        <input type="radio" name="tipoCliente" value="particular" checked>
+                        Particular
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="tipoCliente" value="empresa">
+                        Empresa
+                    </label>
+                </div>
+
+                <div class="company-fields" id="companyFields" hidden>
+                    <div class="form-grid">
+                        <label>
+                            <span>Nombre de la empresa</span>
+                            <input type="text" name="empresa" placeholder="Razón social">
+                        </label>
+                        <label>
+                            <span>CUIT</span>
+                            <input type="text" name="cuit" placeholder="XX-XXXXXXXX-X">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <label>
+                        <span>Provincia</span>
+                        <select name="provincia" required>
+                            <option value="">Selecciona una provincia</option>
+                            <option>Buenos Aires</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>Mendoza</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Localidad</span>
+                        <input type="text" name="localidad" placeholder="Ciudad o localidad" required>
+                    </label>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="section-header">
+                    <p class="section-subtitle">Equipo</p>
+                    <h2>Información del dispositivo</h2>
+                </div>
+
+                <div class="form-grid">
+                    <label>
+                        <span>Tipo de dispositivo</span>
+                        <select name="tipoDispositivo" id="tipoDispositivo" required>
+                            <option value="">Selecciona un tipo</option>
+                            <option>Notebook</option>
+                            <option>Computador de escritorio</option>
+                            <option>Impresora</option>
+                            <option>Tablet</option>
+                            <option>Teléfono móvil</option>
+                            <option>Otro</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Marca</span>
+                        <select name="marca" id="marcaEquipo" required>
+                            <option value="">Selecciona una marca</option>
+                            <option>HP</option>
+                            <option>Dell</option>
+                            <option>Lenovo</option>
+                            <option>Apple</option>
+                            <option>Asus</option>
+                            <option>Samsung</option>
+                            <option>Otra</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-grid" id="otherDeviceField" hidden>
+                    <label>
+                        <span>Tipo de dispositivo - otro</span>
+                        <input type="text" name="dispositivoOtro" placeholder="Describe el tipo de dispositivo">
+                    </label>
+                </div>
+
+                <div class="form-grid" id="otherBrandField" hidden>
+                    <label>
+                        <span>Marca - otra</span>
+                        <input type="text" name="marcaOtra" placeholder="Especifica la marca">
+                    </label>
+                </div>
+
+                <div class="form-grid">
+                    <label>
+                        <span>Modelo</span>
+                        <input type="text" name="modelo" placeholder="Modelo del equipo" required>
+                    </label>
+                    <label>
+                        <span>Número de serie o IMEI</span>
+                        <input type="text" name="serie" placeholder="Número de serie o IMEI" required>
+                    </label>
+                </div>
+
+                <div class="form-grid">
+                    <label>
+                        <span>Sistema operativo</span>
+                        <select name="sistemaOperativo" required>
+                            <option value="">Selecciona un sistema operativo</option>
+                            <option>Windows 10</option>
+                            <option>Windows 11</option>
+                            <option>macOS</option>
+                            <option>Linux</option>
+                            <option>Android</option>
+                            <option>iOS</option>
+                            <option>No aplica / No sabe</option>
+                        </select>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="garantia" id="garantiaCheckbox">
+                        El equipo tiene garantía vigente del fabricante
+                    </label>
+                </div>
+
+                <div class="form-grid" id="warrantyFields" hidden>
+                    <label>
+                        <span>Número de orden de compra o fecha de compra</span>
+                        <input type="text" name="ordenCompra" placeholder="Orden de compra o fecha">
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="datosImportantes" id="datosImportantesCheckbox">
+                        El equipo contiene datos importantes sin respaldo
+                    </label>
+                    <p class="warning-text">TechFix no se responsabiliza por pérdida de datos. Siempre haz respaldo antes de entregar el equipo.</p>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Guardar datos</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const tipoClienteRadios = document.querySelectorAll('input[name="tipoCliente"]');
+        const companyFields = document.getElementById('companyFields');
+        const tipoDispositivo = document.getElementById('tipoDispositivo');
+        const marcaEquipo = document.getElementById('marcaEquipo');
+        const otherDeviceField = document.getElementById('otherDeviceField');
+        const otherBrandField = document.getElementById('otherBrandField');
+        const garantiaCheckbox = document.getElementById('garantiaCheckbox');
+        const warrantyFields = document.getElementById('warrantyFields');
+
+        tipoClienteRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                if (radio.value === 'empresa' && radio.checked) {
+                    companyFields.hidden = false;
+                    companyFields.querySelectorAll('input').forEach(input => input.required = true);
+                } else if (radio.value === 'particular' && radio.checked) {
+                    companyFields.hidden = true;
+                    companyFields.querySelectorAll('input').forEach(input => input.required = false);
+                }
+            });
+        });
+
+        tipoDispositivo.addEventListener('change', () => {
+            if (tipoDispositivo.value === 'Otro') {
+                otherDeviceField.hidden = false;
+                otherDeviceField.querySelector('input').required = true;
+            } else {
+                otherDeviceField.hidden = true;
+                otherDeviceField.querySelector('input').required = false;
+            }
+        });
+
+        marcaEquipo.addEventListener('change', () => {
+            if (marcaEquipo.value === 'Otra') {
+                otherBrandField.hidden = false;
+                otherBrandField.querySelector('input').required = true;
+            } else {
+                otherBrandField.hidden = true;
+                otherBrandField.querySelector('input').required = false;
+            }
+        });
+
+        garantiaCheckbox.addEventListener('change', () => {
+            warrantyFields.hidden = !garantiaCheckbox.checked;
+            warrantyFields.querySelector('input').required = garantiaCheckbox.checked;
+        });
+    </script>
+</body>
+</html>
