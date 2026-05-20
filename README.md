@@ -1,0 +1,1 @@
+Proyecto de una pagina llamada "TechFix" que es un servicio tecnico que repara computadores de escritorio, notebooks, impresoras y dispositivos moviles, tambien ofreciendo repuestos, actualizacion de hardware y soporte remoto
