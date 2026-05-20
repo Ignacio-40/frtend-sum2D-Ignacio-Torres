@@ -1,0 +1,90 @@
+============================================================ 
+CONSULTA #1 
+Etapa del proyecto: Etapa 1 
+Fecha: [20/05/2026] 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Hay que crear una pagina llamada "TechFix" es un servicio de reparacion y 
+mantenimiento de computadores de escritorio, notebooks, impresoras y dispositivos moviles, para esto, 
+primero crearemos la barra de navegacion, que contenga, el nombre del servicio tecnico a la izquierda, 
+los links de navegacion:  Inicio, Servicios, Precios, Nosotros y Ingresar equipo, este ultimo sera una 
+pagina aparte que crearemos mas tarde 
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Entendido. Voy a crear la página de inicio con una barra de navegación 
+profesional para TechFix. 
+------------------------------------------------------------ 
+USO EN EL PROYECTO: Use la respuesta tal cual, debido a que añadio lo que se pidio 
+------------------------------------------------------------ 
+REFLEXION PERSONAL: Fue util, añadio exactamente lo que se le pidio con una buena interfaz
+============================================================
+============================================================
+CONSULTA #2 
+Etapa del proyecto: Etapa 1 
+Fecha: [20/05/2026] 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Ahora haremos la seccion hero, usa la imagen que te deje en la carpeta "images", 
+y esta seccion debe de contener lo siguiente:
+- Titulo principal con el nombre del servicio tecnico (etiqueta h1).
+- Slogan que transmita confianza y rapidez.
+- Boton principal "Ingresar mi equipo" que redirija a ingreso.html.
+- Indicadores visuales de confianza, pueden ser tres iconos con texto corto debajo del hero.
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Perfecto, encontré la imagen. Voy a actualizar la sección hero con la imagen, 
+título, slogan, botón y tres indicadores de confianza.
+------------------------------------------------------------ 
+USO EN EL PROYECTO: Nuevamente se dejo, debido a que se hizo un buen trabajo con lo que se pidio
+------------------------------------------------------------ 
+REFLEXION PERSONAL: Se logro lo que se esperaba, añadiendo la seccion hero como se pidio
+============================================================
+============================================================ 
+CONSULTA #3 
+Etapa del proyecto: Etapa 1 
+Fecha: [20/05/2026] 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Ahora añadiremos los servicios que se ofrecen en formato de tarjetas, serian 6 en total serian:
+- Reparacion de aparatos tecnologicos
+- Mantenimiento de aparatos tecnologicos
+- Venta de respuestos y accesorios
+- Instalaciones de servicios operativos
+- Recuperar datos perdidos
+- Cambio de pantallas
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Revisando la estructura actual para insertar la sección de servicios y estilos de tarjetas.
+------------------------------------------------------------ 
+USO EN EL PROYECTO: Se dejo todo, y se añadio el tiempo estimado a cada uno
+------------------------------------------------------------ 
+REFLEXION PERSONAL: Todo se añadio como se esperaba, pero me falto poner el tiempo estimado, a si que se añadio manualmente
+============================================================
+============================================================ 
+CONSULTA #4
+Etapa del proyecto: Etapa 1 
+Fecha: [20/05/2026] 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Ahora añadiremos una seccion de las marcas atendidas, 
+deben ser minimo 6, otra seccion con los precios, que muestre una tabla HTML, 
+incluir al menos 6 filas con las columnas: Servicio, Precio desde y Tiempo estimado. 
+La tabla debe estar estilizada con CSS y una seccion de testimonios que tenga el nombre 
+del cliente, el tipo de servicio que recibio un texto del comentario y una calificacion.
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Agregando secciones de marcas, precios y testimonios con HTML y estilos CSS nuevos.
+------------------------------------------------------------ 
+USO EN EL PROYECTO: Se dejo todo como estaba, haciendo algunas modificaciones de texto
+------------------------------------------------------------ 
+REFLEXION PERSONAL: Tal vez se tuvo que ser mas especifico con lo que se pedia, pero en general todo bien
+============================================================
+============================================================ 
+CONSULTA #5
+Etapa del proyecto: Etapa 1 
+Fecha: [20/05/2026] 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Ahora añadiremos un Footer, que tenga:
+- Nombre y logo del servicio tecnico.
+- Horarios de atencion presencial y remota.
+- Direccion, email, telefono y WhatsApp ficticios.
+- Links a redes sociales (pueden ser placeholders).
+- Año de copyright.
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Revisando el final de la página y el CSS actual para añadir el footer con estilo coherente.
+------------------------------------------------------------ 
+USO EN EL PROYECTO: Se mantivo todo lo que se añadio, sin añadir nada nuevo
+------------------------------------------------------------ 
+REFLEXION PERSONAL: Se pidio algo simple y se añadio sin problema

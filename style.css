@@ -277,6 +277,138 @@ body {
     font-size: 16px;
     line-height: 1.7;
 }
+
+/* Marcas Atendidas */
+.brands-section {
+    background-color: #f4f8fb;
+    padding: 80px 20px;
+}
+
+.brands-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.brand-item {
+    background-color: var(--white);
+    padding: 24px 18px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    border: 1px solid rgba(0, 86, 179, 0.12);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Precios */
+.pricing-section {
+    background-color: var(--white);
+    padding: 80px 20px;
+}
+
+.pricing-table-wrapper {
+    overflow-x: auto;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    min-width: 720px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 18px 24px;
+    text-align: left;
+}
+
+.pricing-table thead th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.pricing-table tbody tr {
+    border-bottom: 1px solid #e6ecf2;
+    background-color: var(--white);
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #f7fbff;
+}
+
+.pricing-table td {
+    color: #4a5568;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: rgba(23, 162, 184, 0.12);
+}
+
+/* Testimonios */
+.testimonials-section {
+    background-color: #f4f8fb;
+    padding: 80px 20px 100px;
+}
+
+.testimonials-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.testimonial-footer h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: var(--primary-color);
+}
+
+.testimonial-footer span {
+    display: block;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.testimonial-rating {
+    font-size: 18px;
+    color: #f6b93b;
+}
 .indicator:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 56, 179, 0.15);
@@ -403,4 +535,66 @@ body {
     .indicator-icon {
         font-size: 40px;
     }
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 60px 20px 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 30px;
+}
+
+.footer-brand h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p,
+.footer-section p,
+.footer-section a {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-section h3 {
+    color: var(--white);
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.footer-social a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
 }
