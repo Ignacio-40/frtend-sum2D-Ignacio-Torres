@@ -24,6 +24,14 @@
     const cuit = qs('cuit');
     const provincia = qs('provincia');
     const localidad = qs('localidad');
+    const tipoDispositivo = qs('tipoDispositivo');
+    const dispositivoOtro = qs('dispositivoOtro');
+    const marcaEquipo = qs('marcaEquipo');
+    const marcaOtra = qs('marcaOtra');
+    const modelo = qs('modelo');
+    const sistemaOperativo = qs('sistemaOperativo');
+    const garantiaCheckbox = qs('garantiaCheckbox');
+    const ordenCompra = qs('ordenCompra');
     const clientForm = qs('clientForm');
 
     // Regexes
@@ -110,6 +118,77 @@
         return true;
     }
 
+    function validateTipoDispositivo(){
+        if (!tipoDispositivo) return true;
+        if (!tipoDispositivo.value || tipoDispositivo.value === ''){
+            setInvalid(tipoDispositivo);
+            return false;
+        }
+        if (tipoDispositivo.value === 'Otro'){
+            if (!dispositivoOtro || !dispositivoOtro.value.trim() || dispositivoOtro.value.trim().length < 2){
+                if (dispositivoOtro) setInvalid(dispositivoOtro);
+                setInvalid(tipoDispositivo);
+                return false;
+            }
+            setValid(dispositivoOtro);
+        }
+        setValid(tipoDispositivo);
+        return true;
+    }
+
+    function validateMarca(){
+        if (!marcaEquipo) return true;
+        if (!marcaEquipo.value || marcaEquipo.value === ''){
+            setInvalid(marcaEquipo);
+            return false;
+        }
+        if (marcaEquipo.value === 'Otra'){
+            if (!marcaOtra || !marcaOtra.value.trim() || marcaOtra.value.trim().length < 2){
+                if (marcaOtra) setInvalid(marcaOtra);
+                setInvalid(marcaEquipo);
+                return false;
+            }
+            setValid(marcaOtra);
+        }
+        setValid(marcaEquipo);
+        return true;
+    }
+
+    function validateModelo(){
+        if (!modelo) return true;
+        const v = modelo.value.trim();
+        if (v.length < 2){
+            setInvalid(modelo);
+            return false;
+        }
+        setValid(modelo);
+        return true;
+    }
+
+    function validateSO(){
+        if (!sistemaOperativo) return true;
+        if (!sistemaOperativo.value || sistemaOperativo.value === ''){
+            setInvalid(sistemaOperativo);
+            return false;
+        }
+        setValid(sistemaOperativo);
+        return true;
+    }
+
+    function validateOrdenCompraIfGarantia(){
+        if (!garantiaCheckbox) return true;
+        if (garantiaCheckbox.checked){
+            if (!ordenCompra || !ordenCompra.value.trim()){
+                if (ordenCompra) setInvalid(ordenCompra);
+                return false;
+            }
+            setValid(ordenCompra);
+            return true;
+        }
+        if (ordenCompra) ordenCompra.classList.remove('campo-error','campo-ok');
+        return true;
+    }
+
     function validateProvinciaLocalidad(){
         let ok = true;
         if (!provincia.value || provincia.value === ''){
@@ -141,6 +220,15 @@
 
     tipoClienteRadios.forEach(r => r.addEventListener('change', validateTipoCliente));
 
+    if (tipoDispositivo) tipoDispositivo.addEventListener('change', validateTipoDispositivo);
+    if (dispositivoOtro) dispositivoOtro.addEventListener('blur', validateTipoDispositivo);
+    if (marcaEquipo) marcaEquipo.addEventListener('change', validateMarca);
+    if (marcaOtra) marcaOtra.addEventListener('blur', validateMarca);
+    if (modelo) modelo.addEventListener('blur', validateModelo);
+    if (sistemaOperativo) sistemaOperativo.addEventListener('change', validateSO);
+    if (garantiaCheckbox) garantiaCheckbox.addEventListener('change', validateOrdenCompraIfGarantia);
+    if (ordenCompra) ordenCompra.addEventListener('blur', validateOrdenCompraIfGarantia);
+
     function validateAll(){
         const results = [];
         results.push(validateNombre());
@@ -150,6 +238,11 @@
         results.push(validateTelefono());
         results.push(validateTipoCliente());
         results.push(validateProvinciaLocalidad());
+        results.push(validateTipoDispositivo());
+        results.push(validateMarca());
+        results.push(validateModelo());
+        results.push(validateSO());
+        results.push(validateOrdenCompraIfGarantia());
         return results.every(Boolean);
     }
 
