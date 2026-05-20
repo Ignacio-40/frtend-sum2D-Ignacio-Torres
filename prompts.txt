@@ -126,3 +126,58 @@ RESPUESTA RECIBIDA: Revisando la página de ingreso y los estilos actuales para 
 USO EN EL PROYECTO: Se mantuvo todo lo que se añadio, sin añadir nada nuevo
 ------------------------------------------------------------ 
 REFLEXION PERSONAL: Se tuvo que ser especifico para que añada todo lo que se le pide correctamente
+============================================================
+============================================================ 
+CONSULTA #8
+Etapa del proyecto: Etapa 2
+Fecha: [20/05/2026] 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:Ahora añadiremos las siguientes 2 secciones, 
+la descripcion del problema y las preferencias de entrega, en la primera debemos, 
+tipo de problema principal, con varias opciones y una opcion de otro, desde cuando ocurre el problema, 
+con un select con Hoy, Hace algunos dias, Hace semanas, Hace meses, si el problema es permanente o intermitente 
+(radio buttons), Descripcion detallada del problema (textarea, minimo 20 caracteres, maximo 500 caracteres, con contador), 
+El cliente ya intento repararlo o lo llevo a otro tecnico (checkbox),
+Si esta marcado, mostrar textarea para que describa que se hizo anteriormente.
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Agregando las secciones de problema y preferencias de entrega, más la lógica para mostrar campos condicionales y el contador de texto.
+------------------------------------------------------------
+USO EN EL PROYECTO: Se mantuvo todo lo que se añadio, sin añadir nada nuevo
+------------------------------------------------------------ 
+REFLEXION PERSONAL: Se tuvo que ser especifico para que añada todo lo que se le pide correctamente
+============================================================
+============================================================ 
+CONSULTA #9
+Etapa del proyecto: Etapa 2
+Fecha: [20/05/2026] 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: En la siguiente seccion añade: 
+- Modalidad de entrega del equipo (radio buttons: Lo llevo personalmente al local, Solicito retiro a domicilio). Si se elige retiro a domicilio, mostrar campo de texto con la direccion completa.
+- Presupuesto maximo autorizado sin consulta previa (select: Hasta $5.000, Hasta $15.000, Hasta $30.000, Sin limite, Necesito consultar antes de aprobar cualquier gasto).
+- Preferencia de contacto para notificaciones (checkboxes: WhatsApp, Correo electronico, Llamada telefonica). Al menos una debe seleccionarse.
+- Horario preferido para ser contactado (select: Manana 9 a 12, Tarde 12 a 17, Tarde-noche 17 a 20, Indistinto).
+- El cliente acepta que el diagnostico puede demorar hasta 48 horas habiles (checkbox).
+- Acepta los Terminos y Condiciones del servicio (checkbox obligatorio, con enlace a pagina ficticia).
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Voy a revisar la estructura actual y añadir la nueva sección con campos dinámicos y validaciones necesarias.
+------------------------------------------------------------
+USO EN EL PROYECTO: Se mantuvo todo lo que se añadio, pero se arreglo un problema con las casillas
+------------------------------------------------------------ 
+REFLEXION PERSONAL: Tuvo problemas con las casillas, estaban arriba del texto, pero se arreglo
+============================================================
+============================================================ 
+CONSULTA #10
+Etapa del proyecto: Etapa 2
+Fecha: [20/05/2026] 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Ahora por ultimo los botones de acciones:
+- Boton principal "Registrar ingreso" (submit), centrado y con estilo destacado.
+- Boton secundario "Limpiar" (reset).
+- Enlace "Volver al inicio" que redirija a index.html.
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Voy a revisar la estructura actual y añadir la nueva sección con campos dinámicos y validaciones necesarias.
+------------------------------------------------------------
+USO EN EL PROYECTO: Se mantuvo todo lo que añadio
+------------------------------------------------------------ 
+REFLEXION PERSONAL: Parte simple y sin problemas
+============================================================
